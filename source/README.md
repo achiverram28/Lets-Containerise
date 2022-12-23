@@ -38,4 +38,58 @@ $ python3 docker_deploy_win.py
 // If you are a mac or linux user the run this file 
 
 $ python3 docker_deploy_linmac.py
+
+// Make sure that you localhost:5000 and localhost:8000 is free
 ```
+
+
+![2A53C619-35E3-4318-A0B6-FF2E9306EBBF_1_105_c](https://user-images.githubusercontent.com/97288756/209342415-c815f34e-8d72-4f1a-8ee4-d6272f4c1207.jpeg)
+
+You can see the image the you have created in the docker desktop
+
+![43606211-8EFC-4B55-A1AC-AA8AEA8C2ACF_1_105_c](https://user-images.githubusercontent.com/97288756/209342315-2b800253-682a-4951-a576-c3527bd05775.jpeg)
+
+- You can visit the localhost:5000 to see you application running in the docker conatainer . 
+
+```
+// Press Ctrl C to stop the server
+
+// Now move to the directory of the app that you have created 
+
+cd AppName 
+
+// Now to deploy using kubernetes run this command
+
+$ python3 kube_deploy.py 
+
+```
+
+You will see the output as this 
+
+<img width="518" alt="68FFF979-91A8-436A-84F8-B9F60A9DEA2E" src="https://user-images.githubusercontent.com/97288756/209343493-515dc7c7-4f8b-4888-8dfb-dab47d0818b6.png">
+
+Type ```kubectl get pods``` in your terminal after 2 - 3 seconds
+
+You will see the output like this 
+
+![F107EC1B-AA23-463F-8B9F-E26357B96F35_4_5005_c](https://user-images.githubusercontent.com/97288756/209343675-93576865-c770-466e-ad54-df10fc52dbd4.jpeg)
+
+- Then head towards the localhost:8000 , there you go , you have deployed your application using kubernetes 😀.
+
+- Modify the template according your application , you can also mody the Dockerfile and deployment.yaml to modify your development.
+
+- You can delete the kubernetes cluster you created using ```kubectl delete deployment hello-python```. Here I have named the deployment as hello-python , you can modify it . You can delete the images and conatiners in your Docker desktop and run your own images.
+
+## Future Releases
+
+- Conatinerise the Django App
+- Conatinerise other frameworks
+- Focus on CI/CD pipeline using Jenkins
+
+## Contact 
+
+Email => [gmail](achiverram28@gmail.com)
+
+
+
+
