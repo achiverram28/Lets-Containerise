@@ -10,6 +10,9 @@ As of now , we are planning to containerise a Flask Application . The template c
 
 - Must have installed Docker Desktop . Otherwise you can visit this [link](https://www.docker.com/products/docker-desktop/) and do the required.
 - Must have installed kubectl cli on their system . Otherwise you can visit the [link](https://kubernetes.io/docs/tasks/tools/) and do the needful.
+- Enable Kubernetes in you Docker Desktop 
+![F3A72418-C240-401D-947C-93725452F762_1_105_c](https://user-images.githubusercontent.com/97288756/209341902-5140e39f-892f-4ab2-9699-3a6d1a18982d.jpeg)
+
 
 ## Installation
 ```
@@ -28,7 +31,7 @@ $ git clone https://github.com/achiverram28/Lets-Containerise.git
 ## Usage
 
 ```
-// If you are a windows user then run this file
+// If you are a windows user then run this 
 
 $ python3 docker_deploy_win.py
 
