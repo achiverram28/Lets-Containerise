@@ -1,6 +1,5 @@
 import os
-print("Checking your kubectl version using yaml version ...")
-os.system("sleep 1")
+print("Checking your kubectl version using yaml...")
 os.system("kubectl version --client --output=yaml")
 print("Creating the deployment .....")
 os.system("kubectl apply -f ./deployment.yaml")
