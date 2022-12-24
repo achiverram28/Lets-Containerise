@@ -91,6 +91,8 @@ You will see the output like this
 
 $ cd appName
 
+// Move to the Terraform_Nginx directory 
+
 $ cd Terraform_Nginx
 
 // If you are a mac or linux user then perform the below mentioned.
@@ -102,6 +104,19 @@ $ python3 terraform_deploy.py
 $ python3 Terraform_deploy.py
 
 ```
+- You can see the following out like this : 
+![4896CEC4-BEF7-424C-A160-69596B925FD3_1_105_c](https://user-images.githubusercontent.com/97288756/209433265-f9432b0a-6823-4b15-abe9-49de5fe4a8a6.jpeg)
+
+- When you come across this permission , type in yes
+
+![D3D3F636-1A56-498A-86BA-2A486E5D026B_4_5005_c](https://user-images.githubusercontent.com/97288756/209433294-f1251bd7-acd8-4ba9-b895-5d2d76bf250d.jpeg)
+
+- Finally if you head towards localhost:7500 , you can view your nginx server running. You can later use this nginx image and use it as a node in kubernetes and deploy you application there.
+
+![5E215204-4AA3-4488-901E-5ECB0DEE6BD7_1_105_c](https://user-images.githubusercontent.com/97288756/209433331-ceff4678-b223-44df-887a-7c3dc0054288.jpeg)
+
+
+
 ## Future Releases
 
 - Conatinerise the Django App
