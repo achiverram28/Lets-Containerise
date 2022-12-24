@@ -4,7 +4,8 @@ Lets-Containerise is a tool , through which you can easily build containerised a
 
 ## What are we focuisng as of now
 
-As of now , we are planning to containerise a Flask Application . The template contains a hello world Flask Application , which will automatically be containerised using docker and then with help of another command , you can deploy it using kubernetes. Developers can modify their content and go ahead with creating their own images and modify their yaml files for deployment in k8s. The whole idea is to demonstrate how we can containerise any application, with the help of the templates we provide with .
+- As of now , we are planning to containerise a Flask Application . The template contains a hello world Flask Application , which will automatically be containerised using docker and then with help of another command , you can deploy it using kubernetes. Developers can modify their content and go ahead with creating their own images and modify their yaml files for deployment in k8s. The whole idea is to demonstrate how we can containerise any application, with the help of the templates we provide with .
+- We have also provided the terraform feature to spin up your nginx server , which is a production based server.
 
 ## Prerequisite
 
@@ -12,6 +13,7 @@ As of now , we are planning to containerise a Flask Application . The template c
 - Must have installed kubectl cli on their system . Otherwise you can visit the [link](https://kubernetes.io/docs/tasks/tools/) and do the needful.
 - Enable Kubernetes in you Docker Desktop 
 ![F3A72418-C240-401D-947C-93725452F762_1_105_c](https://user-images.githubusercontent.com/97288756/209341902-5140e39f-892f-4ab2-9699-3a6d1a18982d.jpeg)
+- If you want to use the nginx image built using terraform then you must have installed Terraform in your system. Otherwise you can visit the [link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) and do the needful.
 
 
 ## Installation
@@ -80,11 +82,31 @@ You will see the output like this
 
 - You can delete the kubernetes cluster you created using ```kubectl delete deployment hello-python```. Here I have named the deployment as hello-python , you can modify it . You can delete the images and conatiners in your Docker desktop and run your own images.
 
+## Terraform Part
+
+- This feature is automatically installed during you installation. If you want to integrate your flask application with nginx server, then follow these procedures .
+
+```
+// Move to the named Directory which you have created when asked for entering your app name
+
+$ cd appName
+
+$ cd Terraform_Nginx
+
+// If you are a mac or linux user then perform the below mentioned.
+
+$ python3 terraform_deploy.py
+
+// If you are windows user , then go ahead with this
+
+$ python3 Terraform_deploy.py
+
+```
 ## Future Releases
 
 - Conatinerise the Django App
 - Conatinerise other frameworks
-- Focus on CI/CD pipeline using Jenkins
+- Focus on CI/CD pipeline using Jenkins or Github Actions
 
 ## Contact 
 
