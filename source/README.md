@@ -95,6 +95,8 @@ $ cd appName
 
 $ cd Terraform_Nginx
 
+$ terraform init
+
 // If you are a mac or linux user then perform the below mentioned.
 
 $ python3 terraform_deploy.py
